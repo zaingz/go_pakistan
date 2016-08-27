@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:weightSum="10"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    tools:context="com.holygon.zaingz.gopakistan.ImageSelectionActitvity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="0dip"
+    android:weightSum="4"
+    android:layout_weight="9"
+    android:orientation="vertical">
+
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="0dip"
+     android:layout_weight="3"
+     android:background="@drawable/obj"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:background="#FFF">
+
+        <Button
+            android:layout_width="match_parent"
+            android:background="@drawable/btn"
+
+            android:layout_height="match_parent"
+            android:onClick="onLoadImageClick"
+           />
+
+    </RelativeLayout>
+
+</LinearLayout>
+<!--
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Load Image"
+        android:onClick="onLoadImageClick"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/CropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        custom:cropMinCropResultWidthPX="900"
+        custom:cropMinCropResultHeightPX="900"
+        custom:cropMaxCropResultWidthPX="1200"
+        custom:cropMaxCropResultHeightPX="1200"
+        app:scaleType="fitCenter"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="Crop Image"
+        android:onClick="onCropImageClick"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+-->
+
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+      android:background="#FFF"
+        android:layout_weight="1"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+</LinearLayout>
